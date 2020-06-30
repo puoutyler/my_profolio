@@ -1,0 +1,106 @@
+* {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html{
+font-size: 10px; /* so i can use rems and know how large 1 rem is*/
+}
+body {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #555;
+    background-color: #fdfcf1;
+}
+body .header{
+    z-index: 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vw;
+    margin: 2.5vw;
+    height: 100vh;
+    background-image: linear-gradient(to right bottom, rgba(0, 255, 255, 0.9), rgba(142, 255, 221, 0.6));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 70%, 100% 100%, 0% 70% );
+    /*-webkit-clip-path: */
+}
+.header > h1 {
+    width: calc(80vw);
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: orange;
+    font-weight: 900;
+    font-size: 4.5rem;
+    background-color: rgba(167, 255, 245, 0.4);
+    border-radius: 25%;
+    box-shadow: 1rem 2rem 4rem aqua;
+}
+.header > .navigation{
+    display: flex;
+    flex-direction: column;
+}
+.header > .navigation > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: calc(80vw);
+    background-color: rgba(0,255, 255, 0.2);
+    padding: 0 4rem;
+}
+.header > .navigation > ul > li {
+    background-color: aqua;
+    font-size: 2rem;
+    box-shadow: 5px 5px 25px rgba(80, 200, 189, 0.7);
+}
+.header > .navigation > ul > li > a{
+    color: orange;
+}
+.header > .navigation > ul > li > a:link, .header > .navigation > ul > li > a:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+body .main-content{
+    background-color: white;
+    width: 95vw;
+    margin: 2.5vw;
+    margin-top: -10vw;
+    min-height: 100vh;
+    z-index: 2;
+    border-radius: 6%;
+    padding: 10vw 1rem 0 1rem;
+
+}
+.main-content > #projects{
+    display: flex;
+    justify-content: space-around;
+}
+.title{
+    text-align: center;
+    font-size: 3rem;
+    color: #555555;
+    margin: 1rem .2rem 2.5rem;
+}
+body .footer{
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 32rem
+}
+.card:hover{
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.card > img {
+    max-width: 30rem;
+}
